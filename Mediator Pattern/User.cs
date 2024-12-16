@@ -25,7 +25,7 @@ namespace Mediator_Pattern
 
         public void ReceiveMessage(string message, string senderName)
         {
-            string fullMessage = $"[{senderName} -> {name}]: {message}";
+            string fullMessage = $"{senderName} - {name}: {message}";
             messageHistory.Add(fullMessage);
             Console.WriteLine(fullMessage);
         }
